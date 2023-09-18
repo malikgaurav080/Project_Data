@@ -1,10 +1,13 @@
 import fs from 'fs';
 import os from 'os'
 
-console.log(os.cpus())
+
+console.log(os.cpus()[0].model)
 console.log(os.hostname())
 
-fs.writeFileSync('My.txt', 'I am try to write file........')
+
+
+fs.writeFileSync('My.txt', `${os.cpus()[0].model}`)
 console.log("File write sucessfully!!");
 
 

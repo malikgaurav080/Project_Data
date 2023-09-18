@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li{
+            transition: 0.5s;
+            color: #1e9bff;
+            list-style: none;
+            margin:0 18px;
+            font-size:large
+        }
+        li:hover{
+            color: whitesmoke;
+            letter-spacing: 0.1rem;
+            box-shadow:0 0 35px #1e9bff;
+        }
+        .src{
+            width:30px;
+            height:30px;
+        }
+        .left{
+            letter-spacing:5px;
+            transition: 0.5s;
+            color: #1e9bff;
+            font-size: large;
+            
+        }
+        .left h1:hover{
+            color: whitesmoke;
+            letter-spacing: 0.1rem;
+            box-shadow:0 0 35px #1e9bff;}
+
+        @media screen and (max-width:768px) {
+           
+            .right{
+                margin-left: 50%;
+                display:flex;
+                justify-content: right;
+                align-items: center;
+            }
+          
+            nav ul{
+                display:none;
+
+            }
+            .leftsection  h1, h2, h3{
+            font-size: small;
+            color: #1e9bff;
+            
+           
+           
+        }
+          
+            
+        }
+        @media screen and (min-width:768px) {
+           .src{
+                display:none;
+            }
+           .sidebar{
+            display:none;
+           }
+            
+        }
+        .header{
+            background-image: url("https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?cs=srgb&dl=pexels-junior-teixeira-2047905.jpg&fm=jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .firstsection{
+            height:550px;
+            display:flex;
+            justify-content:space-around;
+        }
+        .leftsection {
+            width:40%;
+            padding : 50px 50px 50px 50px;
+            overflow: hidden;
+        }
+        .leftsection  h1, h2, h3{
+            font-size: 2rem;
+            color: #1e9bff;
+            line-height: 3rem;
+           
+           
+        }
+        .rightsection{
+            padding:50px 50px 50px 50px;
+            width:40%;
+            overflow:hidden;
+
+
+        }
+        .insta{
+            width:7%;
+            margin-right: 5px;
+        }
+        .stp{
+            width:300px;
+            height:280px;
+            border-radius:50%;
+            border: 2px solid azure;
+        }
+
+        .span{
+            color:blanchedalmond;
+        }
+        body{
+            background-color: #081b29;
+
+            margin:0 auto;
+          
+        }
+        .secondsection{
+            display:flex;
+            justify-content: space-between;
+
+        }
+        .leftclass{
+            padding-left:20px;
+            padding-top:25px;
+            width:30%;
+            height:30%;
+            border:2px solid black;
+        }
+        .rightclass{
+            width:60%;
+            padding:25px 25px 25px 25px;
+            border:2px solid black;
+            color: azure;
+        }
+        .rightclass p{
+            letter-spacing: 1px;
+            word-spacing: 1rem;
+            font-size: 20px;
+        }
+        .span1{
+           text-align: center;
+            color:antiquewhite;
+        }
+        @media screen and (max-width:768px) {
+           
+           .secondsection{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+           }   
+       }
+      .thirdsection{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .box{
+        padding:20px;
+        width:25%;
+       border:2px solid white;
+       box-shadow:0 0 35px #1e9bff;
+        margin:10px;
+        color:azure;
+      }
+      .forthsection{
+        
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+      }
+      .box1{
+        border:2px solid white;
+        box-shadow:0 0 35px #1e9bff;
+        padding: 10px;
+        width:35%;
+        height:400px;
+        color:azure;
+        margin:10px;
+      }
+      .line{
+        margin-bottom:20px;
+        width:100%;
+        background-color:bisque;
+        height:10px;
+        border-radius: 20px;
+      }
+      .inline1{
+        width:90%;
+        background-color:rgb(6, 36, 26);
+        height:10px;
+        border-radius: 20px;
+      }
+      .inline2{
+        width:80%;
+        background-color:rgb(6, 36, 26);
+        height:10px;
+        border-radius: 20px;
+      }
+      .inline3{
+        width:70%;
+        background-color:rgb(6, 36, 26);
+        height:10px;
+        border-radius: 20px;
+      }
+      .inline4{
+        width:85%;
+        background-color:rgb(6, 36, 26);
+        height:10px;
+        border-radius: 20px;
+      }
+      .inline5{
+        width:60%;
+        background-color:rgb(6, 36, 26);
+        height:10px;
+        border-radius: 20px;
+      }
+      .box2{
+        stroke-width: 10px;
+        stroke:antiquewhite;
+        width:100px;
+        height:100px;
+      
+        margin-right: 3%;
+        border-radius:20%;
+      
+      }
+      .box1jasa{
+        width:80%;
+        display:flex;
+        justify-content: center;
+        padding: 10px;
+        background-color:palegoldenrod;
+        margin:10px;
+      }
+      .fifthsection{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+      .dabba{
+        border:2px solid white;
+        box-shadow:0 0 35px #1e9bff;
+        width:30%;
+        height:250px;
+     
+
+      }
+      .footer{
+        margin-top: 20px;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+       
+      }
+      .contact{
+        padding: 10px;
+        width:40%;
+        color:azure;
+        border:2px solid whitesmoke;
+        box-shadow:0 0 35px #1e9bff;
+        
+
+      }
+      .contact1{
+        padding:60px;
+        width:40%;
+        
+        border:2px solid whitesmoke;
+        box-shadow:0 0 35px #1e9bff;
+
+      }
+     
+      input,textarea,button{
+        font-size: 1rem;
+        width:80%;
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width:768px) {
+           
+           .thirdsection,.forthsection,.fifthsection,.footer{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 20px;
+           }   
+       }
+       .srcc{
+        height:100%;
+        width:100%;
+
+
+       }
+       .sidebar{
+       
+        position: absolute;
+        right:0;
+        top:0;
+        background-color:red;
+        padding:20px;
+        height:100%;
+        width:20%;
+        
+       }
+
+    </Style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="sidebar">
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Experience</li>
+            <li>Skills</li>
+            <li>Projects</li>
+            <li>Contact </li>
+        </div>
+        <nav>
+            <div class="left"><h1>Anuj Malik</h1>
+
+            </div>
+            <div class="right">
+                <img class="src"src="https://en.pimg.jp/013/792/344/1/13792344.jpg">
+                <ul>
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Experience</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Contact </li>
+                </ul>
+            </div>
+        </nav>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+               <span class="span"><h1>Hi,it's me Anuj</h1>
+                <h2> I am a coder and developer</h2>
+                <h3>
+                    I am a Web developer with extensive experience 
+                    of 3 months traning.<br> Expertise is to create
+                    website design and many more
+                </h3>
+                <img class="insta" src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+                <img class="insta" src="https://cdn-icons-png.flaticon.com/512/124/124021.png">
+                <img class="insta" src="https://cdn-icons-png.flaticon.com/512/124/124010.png">
+            
+            
+              </span>
+            </div>
+            <div class="rightsection">
+                
+            </div>  
+
+        </section>
+    </header>
+
+        <span class="span1"> <h1>About me</h1></span>
+
+
+        <section class="secondsection">
+            <div class="leftclass">
+                <img class="stp"src='./anuj.jpeg'>
+            </div>
+            <div class="rightclass">
+                <p> Hello, my name is Anuj Malik, and I’m an engineering student at Galgotias University. I’m interested in being a software engineer.
+                    <br>
+                    Limited experienced and skilled web Developer with a strong current background in industry technology. Proven ability to work independently or as part of a team. Adept at technical troubleshooting and anticipating future potential problems. 
+I am not limited to specific technologies but interested in working on rapid software development and evolution. I am a continuous learner always looking for new technologies.
+                </p>
+
+            </div>
+        </section>
+        <span class="span1"> <h1>MY Experience</h1></span>
+
+        <section class="thirdsection">
+            <div class="box">
+                <h1>Web Developer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo corrupti tempore laborum officia fuga id impedit aperiam eaque tempora temporibus, molestiae nisi aut qui est perferendis incidunt ad maxime unde deleniti suscipit ab similique ratione! Tempora, facere commodi natus quam dolorum laudantium voluptatibus sed. Exercitationem ipsum consequuntur maiores? Quibusdam?</p>
+                <button>Button</button>
+            </div>
+            <div class="box">
+                <h1>Coding</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo corrupti tempore laborum officia fuga id impedit aperiam eaque tempora temporibus, molestiae nisi aut qui est perferendis incidunt ad maxime unde deleniti suscipit ab similique ratione! Tempora, facere commodi natus quam dolorum laudantium voluptatibus sed. Exercitationem ipsum consequuntur maiores? Quibusdam?</p>
+                <button>Button</button>
+            </div>
+            <div class="box">
+                <h1>App Design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo corrupti tempore laborum officia fuga id impedit aperiam eaque tempora temporibus, molestiae nisi aut qui est perferendis incidunt ad maxime unde deleniti suscipit ab similique ratione! Tempora, facere commodi natus quam dolorum laudantium voluptatibus sed. Exercitationem ipsum consequuntur maiores? Quibusdam?</p>
+                <button>Button</button>
+            </div>
+
+        </section>
+        <span class="span1"> <h1>MY Skills</h1></span>
+        <section class="forthsection">
+            <div class="box1">
+                <span class="span1"> <h1>Technical Skills</h1></span>
+                <span>HTML</span>
+                <div class="line">
+                    <div class="inline1"></div>
+                </div>
+           
+
+            <span>CSS</span>
+                <div class="line">
+                    <div class="inline2"></div>
+                </div>
+           
+
+            <span>JAVASCRIPT</span>
+                <div class="line">
+                    <div class="inline3"></div>
+                </div>
+           
+            <span>Java</span>
+                <div class="line">
+                    <div class="inline4"></div>
+                </div>
+           
+
+            <span>C</span>
+                <div class="line">
+                    <div class="inline5"></div>
+                </div>
+            </div>
+            <div class="box1">
+
+                <span class="span1"> <h1>Professional Skills</h1></span>
+
+               <div class="box1jasa">
+                <div class="box2">
+                    <div class="box3"></div>
+                </div>
+                
+
+                <div class="box2">
+                    <div class="box3"></div>
+                </div>
+               </div>
+               <div class="box1jasa">
+                <div class="box2">
+                    <div class="box3"></div>
+                </div>
+
+                <div class="box2">
+                    <div class="box3"></div>
+                </div>
+               </div>
+            </div>
+
+        </section>
+        <span class="span1"> <h1>Latest Projects</h1></span>
+        <section class="fifthsection">
+
+            <div class="dabba">
+                <img class="srcc"src="https://www.shutterstock.com/shutterstock/photos/1449924503/display_1500/stock-vector-web-development-coding-and-programming-responsive-layout-internet-site-or-app-of-devices-creation-1449924503.jpg">
+            </div>
+            <div class="dabba">
+                <img class="srcc"src="https://www.shutterstock.com/shutterstock/photos/1449924503/display_1500/stock-vector-web-development-coding-and-programming-responsive-layout-internet-site-or-app-of-devices-creation-1449924503.jpg">
+            </div>
+            <div class="dabba">
+                <img class="srcc"src="https://t4.ftcdn.net/jpg/03/10/26/27/360_F_310262727_laUeq9XnEmT5W8EfFXVtDioU8wVPehGG.jpg">
+                
+            </div>
+        </section>
+
+
+    </main>
+    
+    <footer class="footer">
+        <div class="contact">
+            <span class="span1"> <h1>Contact me</h1></span>
+            <h1>let's work together</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit odit aperiam qui enim temporibus nostrum animi hic provident magni commodi ut repellendus autem ad quibusdam, perspiciatis quas cupiditate saepe totam placeat! Dolorum, minus! Laborum sequi eos nihil fugit, ad dignissimos veniam, numquam repellendus at praesentium nemo voluptatum cupiditate architecto quisquam?</p>
+             <h2>maliknanjj9485gmail.com</h2>
+             <h2>8477964201</h2>
+        </div>
+        <div class="contact1">
+            <input type="text" placeholder="Eneter your name">
+            <br>
+            <input type="email" placeholder="Eneter your email">
+            <br>
+            <input type="email" placeholder="Eneter your subject">
+            <br>
+           <textarea cols="50" rows="10" placeholder="message"></textarea>
+           <button>Submit</button>
+
+        </div>
+    </footer>
+</body>
+</html>
